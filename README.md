@@ -1,40 +1,40 @@
-# React Truffle Box
 
-This box comes with everything you need to start using Truffle to write, compile, test, and deploy smart contracts, and interact with them from a React app.
+# Tokenization Project
 
-## Installation
+In this Project the owner will have a initial supply of tokens. People from outside can buy these token untill finished. Only the people whose KYC is done will be eligible to buy tokens.
 
-First ensure you are in an empty directory.
 
-Run the `unbox` command using 1 of 2 ways.
+## Tech/tools/Language
+Different technologies used in this project is as follows:
 
-```sh
-# Install Truffle globally and run `truffle unbox`
-$ npm install -g truffle
-$ truffle unbox react
-```
+• truffle
 
-```sh
-# Alternatively, run `truffle unbox` via npx
-$ npx truffle unbox react
-```
+• Solidity
 
-Start the react dev server.
+• ERC20 open-zeppelin contract
 
-```sh
-$ cd client
-$ npm start
-  Starting the development server...
-```
+• Ganache for testing purpose
 
-From there, follow the instructions on the hosted React app. It will walk you through using Truffle and Ganache to deploy the `SimpleStorage` contract, making calls to it, and sending transactions to change the contract's state.
+• Infura/Ropsten testnet/Goerli testnet.
 
-## FAQ
+##  Project Workflow
 
-- __How do I use this with Ganache (or any other network)?__
+The Project Workflow is as follows :-
 
-  The Truffle project is set to deploy to Ganache by default. If you'd like to change this, it's as easy as modifying the Truffle config file! Check out [our documentation on adding network configurations](https://trufflesuite.com/docs/truffle/reference/configuration/#networks). From there, you can run `truffle migrate` pointed to another network, restart the React dev server, and see the change take place.
+- We have one ERC20 Contract which will have initial supply of tokens.
+- Then the initial supply will be transferred to the owner.
+- Using Crowdsale Contract the people from outside can buy tokens.
+- For buying tokens money will be sent to Crowsdsale contract.
+- And only the authorised people can buy token whose KYC is done;this will 
+  be taken care of by the KYC contract.
 
-- __Where can I find more resources?__
 
-  This Box is a sweet combo of [Truffle](https://trufflesuite.com) and [Create React App](https://create-react-app.dev). Either one would be a great place to start!
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Authors
+
+- [@Gautam Rawat](https://github.com/GautamR24)
+
