@@ -23,7 +23,7 @@
 // const infuraProjectId = process.env["INFURA_PROJECT_ID"];
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const Mnemonic = "cart job van own twin common bitter devote result bulk march moral";
+const Mnemonic = "Your private key";
 const AccountIndex = 0;
 
 module.exports = {
@@ -87,13 +87,13 @@ module.exports = {
     // }
     gorli_infura:{
         provider: function(){
-          return new HDWalletProvider(Mnemonic,"https://goerli.infura.io/v3/7d2346999f8d4b7d97a8dbe3a65a5d8c",AccountIndex)
+          return new HDWalletProvider(Mnemonic,"URL of goerli net",AccountIndex)
         },
         network_id: 5
       },
       ropsten_infura:{
         provider: function(){
-          return new HDWalletProvider(Mnemonic,"https://ropsten.infura.io/v3/7d2346999f8d4b7d97a8dbe3a65a5d8c",AccountIndex)
+          return new HDWalletProvider(Mnemonic,"URL of infura net",AccountIndex)
         },
         network_id: 3
       }
